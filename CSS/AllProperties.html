@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL Properties</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(./wallpapper.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        h2{
+            text-transform: uppercase;
+            color: rgb(4, 38, 38);
+            text-transform: uppercase;
+            text-decoration: line-through;
+            text-shadow: 3px 4px 15px purple;
+        }
+        table{
+            /* background-image: url("./"); */
+            background-image: linear-gradient(red,burlywood,rgb(190, 104, 104));
+            border: 10px;
+            border-style: double;
+            border-color: burlywood;
+            border-radius: 9px;
+            box-shadow: 3px 5px 8px rgb(179, 94, 60);
+        }
+        #name
+        {
+            background-color: aquamarine;
+            font-style: italic;
+            font-family: cursive;
+            font-variant: small-caps;
+        }
+    </style>
+    <h2>Text Properties
+        <ol type="1">
+            <li>Shadow</li>
+            <li>Color</li>
+        </ol>
+    </h2>
+    <table >
+        <h1 id="name">Employement Registration</h1>
+        <tbody >
+            <tr>
+                <td>Employee Name</td>
+                <td><input  type="text" placeholder="Enter your name"/></td>
+                
+            </tr>
+            <tr>
+                <td>Employee MobileNO</td>
+                <td><input  type="tel" placeholder="876*******"/></td>
+            </tr>
+            <tr>
+                <td><label>Employee emailid</label></td>
+                <td><input  type="email" placeholder="aabbcc121@gmail.com"/></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" value="Male" name="we"/>Male
+                <input type="radio" value="Female" name="we"/>Female</td>
+            </tr>
+            <br>
+            <tr>
+                <td><input type="submit" value="Enroll" /></td>
+                <td><input type="reset" value="Cancel"/></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

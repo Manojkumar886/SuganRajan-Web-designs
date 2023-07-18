@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayCrudl in Java Script</title>
+</head>
+<body>
+    <!-- <h1>Array-CRUDL BASIC</h1> -->
+    <script>
+        // let fruitname=["apple","Banana"];
+
+        let Fruitsname=new Array();
+
+        Fruitsname.push("Apple");
+        Fruitsname.push(240);
+        Fruitsname.push('A');
+        Fruitsname.push(true);
+
+        // document.write(Fruitsname+"<br>  ")
+
+        // for(i=0;i<Fruitsname.length;i++)
+        // {
+        //     alert(Fruitsname[i])
+        // }
+
+        // Fruitsname.map(valuesget)
+
+        // function valuesget(fruits)
+        // {
+        //     alert(fruits)
+        // }
+
+        let  QA=prompt("tell us which position you want delete..?");
+
+        Fruitsname=Fruitsname.filter((data,pos)=>
+        {
+            return data!==Fruitsname[QA]; //   !== 240
+
+        })
+
+        Fruitsname.map((data)=>
+        {
+            document.write(Fruitsname+"<br>")
+        })
+
+        
+        
+
+       
+
+    </script>
+    
+</body>  
+</html>

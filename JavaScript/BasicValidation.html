@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Validation</title>
+</head>
+<body>
+    <script>
+        let validate=()=>
+        {
+            // let namevalidate=document.forms['myvalidate'].myname.value;
+
+            // alert("your value is "+(/^[a-zA-Z]+$/).test(namevalidate))
+
+            let novalidate=document.forms['myvalidate'].myno.value
+            alert("your mobile no value is "+(/^[0-9]+$/).test(novalidate))
+
+        }
+    </script>
+    
+   <form name="myvalidate">
+    <div style="text-align: center;">
+        <input placeholder="What is your name" type="text" name="myname" />
+        <input placeholder="Enter your contact no" type="tel" name="myno"/>
+        <button type="submit" onclick="validate()">Submit</button>
+    </div>
+
+   </form>
+</body>
+</html>
